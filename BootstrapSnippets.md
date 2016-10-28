@@ -64,7 +64,7 @@ Attached is code for bootstrap.
 
 ## Panels
 
-###### Collapsing Panels
+###### Collapsing Panels (Clicking on panel headers opens and closes)
 
 ```html
 <div class="container">
@@ -110,7 +110,7 @@ Attached is code for bootstrap.
 ```
 
 
-###### Collapsing Panels (using single button)
+###### Collapsing Panels (Clicking on button opens and closes div panel)
 
 ```html
 <div class="container">
