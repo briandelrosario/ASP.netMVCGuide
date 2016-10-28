@@ -124,5 +124,10 @@ Attached is code for bootstrap.
 </div>
 ```
 
+###### Simple Panel (rounded border around div)
 
+```html
+<div class="panel panel-default">
+  <div class="panel-body">A Basic Panel</div>
+</div>
 
