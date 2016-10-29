@@ -1,10 +1,13 @@
 # BootStrap Code
 Attached is code for bootstrap.
 
+## Navbar
 
-# The largest heading
-## The second largest heading
-###### The smallest heading
+###### Fixed to top navbar
+
+###### Fixed to top navbar
+
+
 
 
 
@@ -235,8 +238,10 @@ Attached is code for bootstrap.
 </form>
 ```
 
-##ASP.net MVC
+#ASP.net MVC
+The following code is for the .cs or .cshtml files. (AKA Views or Controllers)
 
+## Routing and directing to different views
 #####Route Config - Passing paremeters
 
 ```cs
