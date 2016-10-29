@@ -134,7 +134,7 @@ Attached is code for bootstrap.
 
 ##Forms
 
-#####Something
+#####Example Form Setup
 
 ```html
 <form>
@@ -207,3 +207,77 @@ Attached is code for bootstrap.
 </form>
 ```
 
+#####Dropdown list
+
+```html
+<form>
+  <div class="form-group">
+    <label for="exampleSelect1">Example select</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+</form>
+```
+
+#####Textarea
+
+```html
+<form>
+  <div class="form-group">
+    <label for="exampleTextarea">Example textarea</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+</form>
+```
+
+##ASP.net MVC
+
+#####Route Config - Passing paremeters
+
+```html
+<!---- goes in route.config---->
+
+routes.MapRoute(
+                name: "Contact",
+                url: "{controller}/{action}/{name}/{email}/{id}",
+                defaults: new { controller = "Contact", action = "Index", id = UrlParameter.Optional }
+            );
+            
+ <!--- URL to pass parameters (first action, then controller, then parameters --->  
+@Url.Action("Email","Contact", new { name = "brian", email = "brian@brian.com" })
+
+ <!--- Contact Controllers --->  
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Web;
+using System.Web.Mvc;
+
+namespace BlowOut.Controllers
+{
+    public class ContactController : Controller
+    {
+        //
+        // GET: /Contact/
+        public string Email(string name,string email)
+        {
+            return "<p>Thank you " + name + ". We will send an email to " + email + "</p>";
+        }
+	}
+}
+
+```
+#####Textarea
+
+```html
+
+
+```
