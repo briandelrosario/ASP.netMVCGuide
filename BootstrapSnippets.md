@@ -239,7 +239,7 @@ Attached is code for bootstrap.
 
 #####Route Config - Passing paremeters
 
-```html
+```cs
 // goes in route.config
 
 routes.MapRoute(
@@ -247,15 +247,15 @@ routes.MapRoute(
                 url: "{controller}/{action}/{name}/{email}/{id}",
                 defaults: new { controller = "Contact", action = "Index", id = UrlParameter.Optional }
             );
-            
+```           
 	    
-	    
+```cs	    
  // URL to pass parameters (first action, then controller, then parameters
 @Url.Action("Email","Contact", new { name = "brian", email = "brian@brian.com" })
+```
 
 
-
-
+```cs
  // Contact Controllers
 using System;
 using System.Collections.Generic;
@@ -278,7 +278,6 @@ namespace BlowOut.Controllers
         }
 	}
 }
-
 ```
 #####Textarea
 
