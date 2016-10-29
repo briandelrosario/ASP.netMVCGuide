@@ -240,7 +240,7 @@ Attached is code for bootstrap.
 #####Route Config - Passing paremeters
 
 ```html
-<!---- goes in route.config---->
+// goes in route.config
 
 routes.MapRoute(
                 name: "Contact",
@@ -248,10 +248,15 @@ routes.MapRoute(
                 defaults: new { controller = "Contact", action = "Index", id = UrlParameter.Optional }
             );
             
- <!--- URL to pass parameters (first action, then controller, then parameters --->  
+	    
+	    
+ // URL to pass parameters (first action, then controller, then parameters
 @Url.Action("Email","Contact", new { name = "brian", email = "brian@brian.com" })
 
- <!--- Contact Controllers --->  
+
+
+
+ // Contact Controllers
 using System;
 using System.Collections.Generic;
 using System.IO;
