@@ -325,11 +325,44 @@ Navbar links:
 </form>
 ```
 
-#ASP.net MVC
+#####Textbox
+
+```html
+<form>
+    <div class="form-group">
+        <label for="exampleTextbox">Example textbox</label>
+        <input type="text" class="form-control" placeholder="Placeholder">
+    </div>
+</form>
+```
+
+
+## Jumbotron
+
+```html
+<div class="jumbotron">
+            <h1>Big Text</h1>
+            <p class="lead">Smaller big text</p>
+            <p><a href="#" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>  
+```
+Styling:
+```css
+/* Current width setting is set to expand across the entire screen, background image can be set to anything */
+.jumbotron {
+    width: 100%;
+    position: relative;
+    left: 0;
+    background-image:url("http://marriottschool.byu.edu/wp-content/uploads/2015/06/Tanner-1a-1200x506.jpg");
+}
+```
+
+
+# ASP.net MVC
 The following code is for the .cs or .cshtml files. (AKA Views or Controllers)
 
 ## Routing and directing to different views
-#####Route Config - Passing paremeters
+##### Route Config - Passing paremeters
 
 ```cs
 // goes in route.config
@@ -371,9 +404,4 @@ namespace BlowOut.Controllers
 	}
 }
 ```
-#####Textarea
 
-```html
-
-
-```
