@@ -3,12 +3,99 @@ Attached is code for bootstrap.
 
 ## Navbar
 
-###### Fixed to top navbar
+###### Fixed navbar (always showing no matter how you scroll)
+```html
+<!-- This goes in the beginning of the body tag, if you change the height you must change the body "top" styling -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container" id="navbartext">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Website Name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+```
 
-###### Fixed to top navbar
 
+###### Static navbar (scrolls with the page)
+```html
+<!-- This goes in the beginning of the body tag, if you change the height you must change the body "top" styling -->
+<div class="navbar navbar-inverse navbar-static-top">
+        <div class="container" id="navbartext">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Website Name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+```
 
+##### Changing the styling of the navbar
+For help picking out a color (or finding out th HEX color) <a href="http://htmlcolorcodes.com/">Click Here</a>
 
+Navbar links:
+```css
+/* Change background color of navbar (usually make the border-color the same color) */
+    .navbar {
+    background-color: #09314f;
+    border-color: #09314f;
+    top:0;
+    height: 50px;
+        }
+
+/* Change the color of the links on the navbar (only works for navbar that includes the navbar-inverse class) */
+    .navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+    font: bolder;
+        }
+	
+/* Change color of the links on the navbar when you hover over them (usually make the border-color the same color) */
+    .navbar-inverse .navbar-nav > li:hover {
+    background-color: #0a416b;
+        }
+```
 
 
 ## Buttons
