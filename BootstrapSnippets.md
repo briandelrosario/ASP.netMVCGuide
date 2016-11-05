@@ -442,3 +442,9 @@ public ActionResult About()
 //put this in a view to generate a complete A tag which includes the URL
 @Html.ActionLink("About", "About", "Home")
 ```
+
+## Referencing documents within the project (the ~ brings you to the root folder)
+
+```cs
+~/bundles/modernizr
+```
