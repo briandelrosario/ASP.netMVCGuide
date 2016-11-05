@@ -231,10 +231,11 @@ Navbar links:
 ```
 
 ##Forms
+<img src="http://brianmikal.com/403midterm/formpart1.png" width="330" /><br>
+<img src="http://brianmikal.com/403midterm/formpart2.png" width="330" /><br>
+
 
 #####Example Form Setup
-<img src="http://brianmikal.com/403midterm/formpart1.png" width="400" /><br>
-<img src="http://brianmikal.com/403midterm/formpart2.png" width="400" /><br>
 ```html
 <form>
   <div class="form-group">
@@ -347,6 +348,7 @@ Navbar links:
 
 
 ## Jumbotron
+<img src="http://brianmikal.com/403midterm/jumbotron.png" width="430" /><br>
 
 ```html
 <div class="jumbotron">
