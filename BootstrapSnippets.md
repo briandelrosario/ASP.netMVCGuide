@@ -10,7 +10,7 @@ Attached is code for bootstrap.
 ```
 
 ## Navbar
-
+<img src="http://brianmikal.com/403midterm/fixednavbar.png" width="650" /><br>
 ###### Fixed navbar (always showing no matter how you scroll)
 ```html
 <!-- This goes in the beginning of the body tag, if you change the height you must change the body "top" styling -->
@@ -109,7 +109,7 @@ Navbar links:
 ## Buttons
 
 ###### Single button
-
+<img src="http://brianmikal.com/403midterm/singlebutton.png" /><br>
 ```html
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn btn-primary">Blue</button>
@@ -136,6 +136,7 @@ Navbar links:
 
 ###### Button Group
 
+<img src="http://brianmikal.com/403midterm/buttongroup.png" /><br>
 ```html
 <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-secondary">Left</button>
@@ -146,7 +147,7 @@ Navbar links:
 
 
 ###### Button Dropdown
-
+<img src="http://brianmikal.com/403midterm/buttondropdown.png" /><br>
 ```html
 <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
@@ -163,7 +164,7 @@ Navbar links:
 ## Panels
 
 ###### Collapsing Panels (Clicking on panel headers opens and closes)
-
+<img src="http://brianmikal.com/403midterm/collapsingpanels.png" width="700" /><br>
 ```html
 <div class="container">
   <div class="panel-group" id="accordion">
@@ -209,10 +210,9 @@ Navbar links:
 
 
 ###### Collapsing Panels (Clicking on button opens and closes div panel)
-
+<img src="http://brianmikal.com/403midterm/simplecollapsible.png" width="700" /><br>
 ```html
 <div class="container">
-  <h2>Simple Collapsible</h2>
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
   <div id="demo" class="collapse">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -223,7 +223,7 @@ Navbar links:
 ```
 
 ###### Simple Panel (rounded border around div)
-
+<img src="http://brianmikal.com/403midterm/simplepanel.png" width="650" /><br>
 ```html
 <div class="panel panel-default">
   <div class="panel-body">A Basic Panel</div>
@@ -233,7 +233,8 @@ Navbar links:
 ##Forms
 
 #####Example Form Setup
-
+<img src="http://brianmikal.com/403midterm/formpart1.png" width="400" /><br>
+<img src="http://brianmikal.com/403midterm/formpart2.png" width="400" /><br>
 ```html
 <form>
   <div class="form-group">
