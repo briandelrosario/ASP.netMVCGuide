@@ -448,3 +448,24 @@ public ActionResult About()
 ```cs
 ~/bundles/modernizr
 ```
+
+
+## Loading partial views based on viewbag attributes passed to view
+```cs
+@if(ViewBag.id == "bsis") {
+    Html.RenderPartial("degreeinfo");
+}
+
+@if(ViewBag.id == "mism") {
+    Html.RenderPartial("degreeinfo");
+    }
+@if (ViewBag.id != "mism" & ViewBag.id != "bsis") { 
+    Html.RenderPartial("selectdegree");
+    }
+
+@if (ViewBag.id == "bsis")
+{
+    <h2>BSIS FAQ's</h2>
+    Html.RenderPartial("bsis");
+}
+```
