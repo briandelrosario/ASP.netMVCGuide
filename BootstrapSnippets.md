@@ -160,7 +160,13 @@ Navbar links:
   </div>
   ```
 
+## Random Bootstrap
 
+###### Breadcrumbs
+<img src="http://brianmikal.com/403midterm/breadcrumbs.png" width="700px" /><br>
+```html
+<nav class='breadcrumb'><a class='breadcrumb-item' href='#'>Home</a> / <a class='breadcrumb-item' href='#'>Page</a> / <span class='breadcrumb-item active;'>Contact</span></nav>
+```
 ## Panels
 
 ###### Collapsing Panels (Clicking on panel headers opens and closes)
@@ -235,7 +241,7 @@ Navbar links:
 <img src="http://brianmikal.com/403midterm/formpart2.png" width="330" /><br>
 
 
-#####Example Form Setup
+##### Example Form Setup
 ```html
 <form>
   <div class="form-group">
@@ -348,7 +354,7 @@ Navbar links:
 
 
 ## Jumbotron
-<img src="http://brianmikal.com/403midterm/jumbotron.png" width="430" /><br>
+<img src="http://brianmikal.com/403midterm/jumbotron.png" width="550" /><br>
 
 ```html
 <div class="jumbotron">
