@@ -422,3 +422,23 @@ namespace BlowOut.Controllers
 }
 ```
 
+
+##### Route Config - Normal (going to another view)
+```cs
+// goes in HomeController.cs
+public ActionResult About()
+        {
+            ViewBag.Message = "Your application description page.";
+            //load breadcrumb
+            ViewBag.breadcrumb = "<nav class='breadcrumb'><a class='breadcrumb-item' href='" + Url.Action("Index", "Home") + "'>Home</a> / <span class='breadcrumb-item active;'>About</span></nav>";
+            return View();
+        }
+```
+
+```cs
+//put this in a view to generate the URL for this page
+@Url.Action("About")
+
+//put this in a view to generate a complete A tag which includes the URL
+@Html.ActionLink("About", "About", "Home")
+```
